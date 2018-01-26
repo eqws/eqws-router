@@ -73,8 +73,6 @@ class Router {
 			return ctx._onError(err);
 		}
 
-		ctx.route = route;
-
 		let way = this._middlewares.concat(route.handler);
 		let fn = compose(way);
 

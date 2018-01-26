@@ -60,11 +60,14 @@ class Context {
 		this.id   = args[0];
 		this.path = args[1];
 		this.url  = args[1];
+		this.originalUrl = args[1];
 
 		this.request = {
-			args: args[2],
 			protocol: 'ws',
-			ip: headers['x-real-ip'] || handshakeData.remoteAddress
+			path: args[1],
+			body: args[2],
+			ip: handshakeData.remoteAddress,
+			headers: headers
 		};
 	}
 
