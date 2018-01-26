@@ -1,5 +1,5 @@
 const debug    = require('debug')('eqws-router:ctx');
-const Protocol = require('../../eqws-protocol');
+const Protocol = require('eqws-protocol');
 const C        = Protocol.C;
 const Packet   = Protocol.Packet;
 const ApiError = Protocol.ApiError;

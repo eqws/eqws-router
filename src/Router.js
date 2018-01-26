@@ -2,7 +2,7 @@ const debug = require('debug')('eqws-router');
 const error = require('debug')('eqws-router:error');
 
 const compose = require('koa-compose');
-const Protocol = require('../../eqws-protocol');
+const Protocol = require('eqws-protocol');
 const C = Protocol.C;
 const ApiError = Protocol.ApiError;
 const Context = require('./Context');
