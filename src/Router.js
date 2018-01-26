@@ -27,7 +27,7 @@ class Router {
 		} else if (arguments.length > 2) {
 			let args = Array.prototype.slice.call(arguments);
 
-			route.path = args.unshift();
+			route.path = args.shift();
 			route.handler = compose(args);
 		} else {
 			throw new Error('Invalid route define arguments');
